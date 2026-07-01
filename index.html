@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo 🌦️</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Previsão do Tempo</h2>
+        
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Digite o nome da cidade...">
+            <button id="btnBuscar">Buscar</button>
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+
+        <div id="weatherResult" class="weather-result" style="display: none;">
+            <h3 id="cityName">Cidade, BR</h3>
+            <div class="temp-info">
+                <img id="weatherIcon" src="" alt="Ícone do clima">
+                <span id="temperature">0°C</span>
+            </div>
+            <p id="weatherDesc">Ensolarado</p>
+            <div class="details">
+                <p>Humidade: <span id="humidity">0%</span></p>
+                <p>Vento: <span id="wind">0 km/h</span></p>
+            </div>
+        </div>
+
+        <div class="history-container">
+            <h4>Buscas Recentes</h4>
+            <ul id="historyList">
+                </ul>
+        </div>
+    </div>
+
+    <script src="./weather.js"></script>
+</body>
+</html>

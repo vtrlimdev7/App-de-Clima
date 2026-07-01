@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #161b22;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #30363d;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #58a6ff;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background-color: #21262d;
+    color: #fff;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #58a6ff;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #2ea043;
+}
+
+.error-message {
+    color: #f85149;
+    background-color: rgba(248, 81, 73, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: none;
+    font-size: 14px;
+    border: 1px solid rgba(248, 81, 73, 0.2);
+}
+
+.weather-result {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #21262d;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+.temp-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.temp-info span {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#weatherDesc {
+    text-transform: capitalize;
+    color: #8b949e;
+    margin-bottom: 15px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    border-top: 1px solid #30363d;
+    padding-top: 15px;
+}
+
+.history-container {
+    margin-top: 25px;
+    border-top: 1px solid #30363d;
+    padding-top: 15px;
+}
+
+h4 {
+    color: #8b949e;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+ul li {
+    background-color: #30363d;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+ul li:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
